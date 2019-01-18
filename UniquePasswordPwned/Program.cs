@@ -54,7 +54,7 @@ namespace UniquePasswordPwned
                 if (string.IsNullOrEmpty(password))
                 {
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.WriteLine("[SKIP] " + new FileInfo(path).Name + "(" + index + " of " + count + ")");
+                    Console.WriteLine("[SKIP] " + new FileInfo(path).Name + "(" + index + " of " + count + ")" + " " + "(" + index + " of " + count + ")");
                     Console.ResetColor();
                 }
 
@@ -64,7 +64,7 @@ namespace UniquePasswordPwned
                 if (status)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("[VLUN] " + new FileInfo(path).Name + " " + "(" + content + ")");
+                    Console.WriteLine("[VLUN] " + new FileInfo(path).Name + " " + "(" + content + ")" + " " + "(" + index + " of " + count + ")");
                     Console.ResetColor();
                 }
                 else
